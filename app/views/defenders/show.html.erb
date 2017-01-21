@@ -1,3 +1,7 @@
 <div>
-  <%= @defender.maintype %> <%= @defender.subtype %>
+  <% if @defender.subtype.nil? %>
+    <%= @defender.maintype %>
+  <% else %>
+    <%= @defender.maintype %> / <%= @defender.subtype %>
+  <% end %>
 </div>

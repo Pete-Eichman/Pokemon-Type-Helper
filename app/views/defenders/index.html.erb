@@ -4,7 +4,7 @@
       Type: <%= link_to defender.maintype, defender_path(defender) %>
     </br>
     <% else %>
-      Type / Subtype: <%= link_to "#{defender.maintype} / #{defender.subtype}", defender_path(defender) %>
+      Types: <%= link_to "#{defender.maintype} / #{defender.subtype}", defender_path(defender) %>
       </br>
     <% end %>
   <% end %>
