@@ -1,0 +1,11 @@
+<div>
+  <% @defenders.each do |defender| %>
+    <% if defender.subtype.nil? %>
+      Type: <%= link_to defender.maintype, defender_path(defender) %>
+    </br>
+    <% else %>
+      Type / Subtype: <%= link_to "#{defender.maintype} / #{defender.subtype}", defender_path(defender) %>
+      </br>
+    <% end %>
+  <% end %>
+</div>

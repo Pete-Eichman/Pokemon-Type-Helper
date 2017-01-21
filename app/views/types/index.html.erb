@@ -1,0 +1,7 @@
+<div>
+  <ul>
+    <% @types.each do |type| %>
+      <li><%= link_to type.typename, type_path(type) %></li>
+    <% end %>
+  </ul>
+</div>
